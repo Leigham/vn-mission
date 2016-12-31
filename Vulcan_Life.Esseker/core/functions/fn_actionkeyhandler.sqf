@@ -88,7 +88,7 @@ life_action_inUse = true;
 };
 
 //Check if it's a dead body.
-if (_curObject isKindOf "Man" && !(_curObject isKindOf "Animal") && {!alive _curObject} && !(_curObject getVariable ["Revive",false])) exitWith {
+if (_curObject isKindOf "Man" && !(_curObject isKindOf "Animal") && {!alive _curObject}) exitWith {
     //Hotfix code by ins0
         if (life_inv_defibrillator > 0) then {
             [_curObject] call life_fnc_revivePlayer;

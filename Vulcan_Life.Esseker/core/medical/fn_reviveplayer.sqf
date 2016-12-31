@@ -11,8 +11,6 @@ _target = param [0,objNull,[objNull]];
 if (isNull _target) exitWith {};
 _reviveCost = LIFE_SETTINGS(getNumber,"revive_fee");
 
-_revivable = _target getVariable ["Revive",false];
-if (_revivable) exitWith {};
 if (_target getVariable ["Reviving",objNull] == player) exitWith {hint localize "STR_Medic_AlreadyReviving";};
 if (player distance _target > 5) exitWith {}; //Not close enough.
 
@@ -49,7 +47,6 @@ for "_i" from 0 to 1 step 0 do {
     if (life_interrupted) exitWith {};
     if (player getVariable ["restrained",false]) exitWith {};
     if (player distance _target > 4) exitWith {_badDistance = true;};
-    if (_target getVariable ["Revive",false]) exitWith {};
     if (_target getVariable ["Reviving",objNull] != player) exitWith {};
 };
 

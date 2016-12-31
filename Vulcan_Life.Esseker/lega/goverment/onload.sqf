@@ -21,5 +21,5 @@ ctrlSetText [66534, _GovtName];
 ctrlSetText [66540, _GovtImage];
 
 {
-   _index = lbAdd [66536,_x];
+   _index = lbAdd [66535,_x];
 }foreach ["Weapons","Vehicles","Clothing","Attachments","Magazines"];
