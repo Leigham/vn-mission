@@ -8,18 +8,18 @@ class EditorData
 	toggles=2;
 	class ItemIDProvider
 	{
-		nextID=48817;
+		nextID=48820;
 	};
 	class MarkerIDProvider
 	{
-		nextID=33;
+		nextID=35;
 	};
 	class Camera
 	{
-		pos[]={10819.061,14.644982,4734.5288};
-		dir[]={-0.92929506,-0.3282035,-0.16943897};
-		up[]={-0.32288927,0.94460309,-0.058872238};
-		aside[]={-0.17937376,-2.841407e-007,0.98378646};
+		pos[]={3443.625,303.91083,6739.7783};
+		dir[]={-0.52386183,-0.64468873,-0.55673993};
+		up[]={-0.44179305,0.76443994,-0.4695206};
+		aside[]={-0.72828919,1.8789433e-007,0.68527925};
 	};
 };
 binarizationWanted=0;
@@ -783,7 +783,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=4446;
+		items=4448;
 		class Item0
 		{
 			dataType="Object";
@@ -124653,7 +124653,7 @@ class Mission
 			};
 			id=48813;
 			type="acd_InfoStand_V1_F";
-			atlOffset=0.017000198;
+			atlOffset=0.017002106;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -124696,6 +124696,7 @@ class Mission
 			};
 			id=48814;
 			type="acd_InfoStand_V1_F";
+			atlOffset=1.9073486e-006;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -124803,6 +124804,34 @@ class Mission
 				};
 				nAttributes=1;
 			};
+		};
+		class Item4446
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3352.429,160.81238,6665.853};
+				angles[]={0,4.0017953,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="this allowDamage false; this enableSimulation false; this addAction [""GangShop"",{ createDialog ""Goverment""}]";
+			};
+			id=48817;
+			type="acd_InfoStand_V1_F";
+			atlOffset=0.0039825439;
+		};
+		class Item4447
+		{
+			dataType="Marker";
+			position[]={3360.885,6.5851563e+013,6674.6201};
+			name="Govt_Ministry";
+			type="Empty";
+			alpha=0.025584657;
+			id=48818;
+			atlOffset=6.5851563e+013;
 		};
 	};
 };

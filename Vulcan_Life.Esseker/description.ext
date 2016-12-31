@@ -10,6 +10,8 @@ disableChannels[]={{0,true,true},{1,true,true},{2,true,true}};    // Disabled te
 #include "lega\PlayerMenu\PMenuMain.hpp"
 #include "lega\GangShop\GangShopina.hpp"
 #include "lega\GangShop\Config.cpp"
+#include "lega\goverment\govtdialog.hpp"
+#include "lega\goverment\Config.cpp"
 
 
 class CfgServer {
