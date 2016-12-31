@@ -44,7 +44,7 @@ VNPlayerGang = "TheSaviors";
 if(_Puid in ["76561198132926159", "UID2"])then{
 VNPlayerGang = "VersaceGladiators";
 };
-
+if(VNPlayerGang ==)exitwith{closeDialog 0);
 
 
 //systemchat format ["Gang:%1",VNPlayerGang];

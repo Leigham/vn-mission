@@ -1,11 +1,21 @@
 hint "Purchasing Item";
 disableSerialization;
+if(!VNPlayerGang == "")then{
 private _WeaponArray = getArray (missionConfigFile >> "Gangs" >>  VNPlayerGang >> "Weapons");
 private _VehicleArray = getArray (missionConfigFile >> "Gangs" >> VNPlayerGang >> "Vehicles");
 private _ClothingArray = getArray (missionconfigfile >> "Gangs" >> VNPlayerGang >> "Clothing");
 private _MagazineArray = getArray (missionconfigfile >> "Gangs" >> VNPlayerGang >> "Magazines");
 private _AttachmentArray = getArray (missionconfigfile >> "Gangs" >> VNPlayerGang >> "Attachments");
-
+private _ItemArray = getArray (missionconfigfile >> "Gangs" >> VNPlayerGang  >> "Items");
+};
+if{!VNPlayerGovt == "")then{
+private _WeaponArray = getArray (missionConfigFile >> "GovernmentConfig" >>  VNPlayerGovt  >> "Weapons");
+private _VehicleArray = getArray (missionConfigFile >> "GovernmentConfig" >> VNPlayerGovt  >> "Vehicles");
+private _ClothingArray = getArray (missionconfigfile >> "GovernmentConfig" >> VNPlayerGovt  >> "Clothing");
+private _MagazineArray = getArray (missionconfigfile >> "GovernmentConfig" >> VNPlayerGovt  >> "Magazines");
+private _AttachmentArray = getArray (missionconfigfile >> "GovernmentConfig" >> VNPlayerGovt  >> "Attachments");
+private _ItemArray = getArray (missionconfigfile >> "GovernmentConfig" >> VNPlayerGovt  >> "Items");
+};
 
 
 private _display = findDisplay 94653;

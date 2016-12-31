@@ -3,7 +3,7 @@ class GovernmentConfig{
   class Ministry{
      Name = "Minitstry Marker";
 	   Marker = "Govt_Ministry";
-     Image = "Lega\goverment\LastRegiment.paa"; //To be changed to Ministry Logo
+     Image = ""; //To be changed to Ministry Logo
      Vehicles[] = {
    		{"A3L_ChargerBlack","Charger (Black)",100},
    		{"Mrshounka_Raptor2_noir","Gang Raptor",100}

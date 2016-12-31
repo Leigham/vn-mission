@@ -1,7 +1,7 @@
 _puid = GetplayerUID player;
 
 //Govt 1
-if(_Puid in ["", "UID2"])then{
+if(_Puid in ["76561198132926159", "UID2"])then{
 	VNPlayerGovt = "Ministry";
 };
 

@@ -38,7 +38,7 @@ class vn_govtitemtype: Life_RscCombo
 	h = 0.022 * safezoneH;
 	tooltip = "Pick an ItemType"; //--- ToDo: Localize;
   colorBackground[] = {0,0,0,0.7};
-  onLBSelChanged = "[] execVM 'lega\GangShop\onlbChanged.sqf'";
+  onLBSelChanged = "[] execVM 'lega\goverment\onlbChanged.sqf'";
 
 };
 class vn_govtlogo: Life_RscPicture
@@ -63,7 +63,7 @@ class vn_govtitemlist: Life_RscListbox
 	tooltip = "Select an Item";
   colorBackground[] = {0,0,0,0.7};
   sizeEx = 0.03;
-  onLBSelChanged = "[] execVM 'lega\GangShop\onlbpriceChanged.sqf'";
+  onLBSelChanged = "[] execVM 'lega\goverment\onlbpriceChanged.sqf'";
 };
 class vn_govtbuy: Life_RscButtonMenu
 {
