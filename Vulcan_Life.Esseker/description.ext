@@ -1,4 +1,4 @@
-disableChannels[]={{0,true,true},{1,true,true},{2,true,true}};    // Disabled text and voice for global, side, and command channels. disableChannels[] = {{channelID<number>, disableChat<bool>, disableVoice<bool>}};
+disableChannels[]={{0,true,true},{1,true,true},{2,true,true},{2,true,true},{3,true,true},{4,true,true},{5,true,true}};    // Disabled text and voice for global, side, and command channels. disableChannels[] = {{channelID<number>, disableChat<bool>, disableVoice<bool>}};
 
 #include "config\Config_Spyglass.hpp"
 #include "CfgRemoteExec.hpp"
@@ -22,6 +22,17 @@ class CfgServer {
     Enabled: When HeadlessSupport is set to 1 (enabled), the server will run without fault when no Headless Client is connected. However, it will support the Headless Client if you choose to connect one.
     Disabled: If HeadlessSupport is set to 0 (disabled), the connection of a Headless Client will make no difference. This option will increase server performance a TINY but negligible amount.
     */
+};
+showHUD[] = {
+	true,	// Scripted HUD (same as showHUD command)
+	false,	// Vehicle + soldier info
+	false,	// Vehicle radar [HIDDEN]
+	false,	// Vehicle compass [HIDDEN]
+	false,	// Tank direction indicator
+	true,	// Commanding menu
+	false,	// Group Bar
+	true,	// HUD Weapon Cursors
+	false	// HUD Squad Radar
 };
 
 class RscTitles {

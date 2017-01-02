@@ -13,7 +13,7 @@ class VirtualShops {
         side = "civ";
         license = "";
         level[] = { "", "", -1, "" };
-        items[] = { "HealthPack","waterBottle", "rabbit", "apple", "redgull", "tbacon", "pickaxe", "toolkit", "fuelFull", "peach", "storagesmall", "storagebig", "rabbit_raw", "hen_raw", "rooster_raw", "sheep_raw", "goat_raw" };
+        items[] = { "HealthPack","waterBottle", "rabbit", "apple", "redgull", "tbacon", "pickaxe", "toolkit", "fuelFull", "peach", "storagesmall", "storagebig", "rabbit_raw", "zipTies", "rooster_raw", "sheep_raw", "goat_raw" };
     };
 	
 	class med_market {
@@ -195,7 +195,7 @@ class VirtualItems {
         variable = "toolkit";
         displayName = "STR_Item_Toolkit";
         weight = 4;
-        buyPrice = 350;
+        buyPrice = 1100;
         sellPrice = 100;
         illegal = false;
         edible = -1;
@@ -240,10 +240,10 @@ class VirtualItems {
         displayName = "STR_Item_HealthPack";
         weight = 15;
         buyPrice = 500;
-        sellPrice = 500;
+        sellPrice = 122;
         illegal = false;
         edible = -1;
-        icon = "media\ico_spikeStrip.paa";
+        icon = "media\healing.paa";
     };
 
     class lockpick {
@@ -263,7 +263,7 @@ class VirtualItems {
         displayName = "STR_Item_GoldBar";
         weight = 12;
         buyPrice = -1;
-        sellPrice = 95000;
+        sellPrice = 10000;
         illegal = true;
         edible = -1;
         icon = "media\ico_goldBar.paa";
@@ -273,7 +273,7 @@ class VirtualItems {
         variable = "blastingCharge";
         displayName = "STR_Item_BCharge";
         weight = 15;
-        buyPrice = 35000;
+        buyPrice = 25000;
         sellPrice = 10000;
         illegal = true;
         edible = -1;
@@ -284,7 +284,7 @@ class VirtualItems {
         variable = "boltCutter";
         displayName = "STR_Item_BCutter";
         weight = 5;
-        buyPrice = 7500;
+        buyPrice = 5000;
         sellPrice = 1000;
         illegal = true;
         edible = -1;
@@ -328,7 +328,7 @@ class VirtualItems {
     class oil_unprocessed {
         variable = "oilUnprocessed";
         displayName = "STR_Item_OilU";
-        weight = 7;
+        weight = 3;
         buyPrice = -1;
         sellPrice = -1;
         illegal = false;
@@ -339,9 +339,9 @@ class VirtualItems {
     class oil_processed {
         variable = "oilProcessed";
         displayName = "STR_Item_OilP";
-        weight = 6;
+        weight = 3;
         buyPrice = -1;
-        sellPrice = 65;
+        sellPrice = 190;
         illegal = false;
         edible = -1;
         icon = "media\Gem1.paa";
@@ -363,7 +363,7 @@ class VirtualItems {
         displayName = "STR_Item_CopperIngot";
         weight = 3;
         buyPrice = -1;
-        sellPrice = 32;
+        sellPrice = 230;
         illegal = false;
         edible = -1;
         icon = "media\ico_copper.paa";
@@ -385,7 +385,7 @@ class VirtualItems {
         displayName = "STR_Item_IronIngot";
         weight = 3;
         buyPrice = -1;
-        sellPrice = 30;
+        sellPrice = 210;
         illegal = false;
         edible = -1;
         icon = "media\Plank1.paa";
@@ -394,7 +394,7 @@ class VirtualItems {
     class salt_unrefined {
         variable = "saltUnrefined";
         displayName = "STR_Item_Salt";
-        weight = 1;
+        weight = 3;
         buyPrice = -1;
         sellPrice = -1;
         illegal = false;
@@ -405,9 +405,9 @@ class VirtualItems {
     class salt_refined {
         variable = "saltRefined";
         displayName = "STR_Item_SaltR";
-        weight = 1;
+        weight = 3;
         buyPrice = -1;
-        sellPrice = 25;
+        sellPrice = 180;
         illegal = false;
         edible = -1;
         icon = "media\Herb1.paa";
@@ -416,7 +416,7 @@ class VirtualItems {
     class sand {
         variable = "sand";
         displayName = "STR_Item_Sand";
-        weight = 1;
+        weight = 3;
         buyPrice = -1;
         sellPrice = -1;
         illegal = false;
@@ -427,9 +427,9 @@ class VirtualItems {
     class glass {
         variable = "glass";
         displayName = "STR_Item_Glass";
-        weight = 1;
+        weight = 3;
         buyPrice = -1;
-        sellPrice = 27;
+        sellPrice = 230;
         illegal = false;
         edible = -1;
         icon = "media\Sand1.paa";
@@ -438,7 +438,7 @@ class VirtualItems {
     class diamond_uncut {
         variable = "diamondUncut";
         displayName = "STR_Item_DiamondU";
-        weight = 2;
+        weight = 3;
         buyPrice = -1;
         sellPrice = -1;
         illegal = false;
@@ -449,9 +449,9 @@ class VirtualItems {
     class diamond_cut {
         variable = "diamondCut";
         displayName = "STR_Item_DiamondC";
-        weight = 2;
+        weight = 3;
         buyPrice = -1;
-        sellPrice = 58;
+        sellPrice = 225;
         illegal = false;
         edible = -1;
         icon = "media\Scrap1.paa";
@@ -460,7 +460,7 @@ class VirtualItems {
     class rock {
         variable = "rock";
         displayName = "STR_Item_Rock";
-        weight = 5;
+        weight = 3;
         buyPrice = -1;
         sellPrice = -1;
         illegal = false;
@@ -471,9 +471,9 @@ class VirtualItems {
     class cement {
         variable = "cement";
         displayName = "STR_Item_CementBag";
-        weight = 5;
+        weight = 3;
         buyPrice = -1;
-        sellPrice = 87;
+        sellPrice = 266;
         illegal = false;
         edible = -1;
         icon = "media\ico_cement.paa";
@@ -483,7 +483,7 @@ class VirtualItems {
     class heroin_unprocessed {
         variable = "heroinUnprocessed";
         displayName = "STR_Item_HeroinU";
-        weight = 4;
+        weight = 3;
         buyPrice = -1;
         sellPrice = -1;
         illegal = true;
@@ -495,9 +495,9 @@ class VirtualItems {
     class heroin_processed {
         variable = "heroinProcessed";
         displayName = "STR_Item_HeroinP";
-        weight = 4;
+        weight = 3;
         buyPrice = -1;
-        sellPrice = 200;
+        sellPrice = 350;
         illegal = true;
         edible = -1;
         icon = "media\Explosive1.paa";
@@ -520,7 +520,7 @@ class VirtualItems {
         displayName = "STR_Item_Marijuana";
         weight = 3;
         buyPrice = -1;
-        sellPrice = 130;
+        sellPrice = 340;
         illegal = true;
         edible = -1;
         icon = "media\Bullets1.paa";
@@ -529,7 +529,7 @@ class VirtualItems {
     class cocaine_unprocessed {
         variable = "cocaineUnprocessed";
         displayName = "STR_Item_CocaineU";
-        weight = 4;
+        weight = 3;
         buyPrice = -1;
         sellPrice = -1;
         illegal = true;
@@ -541,9 +541,9 @@ class VirtualItems {
     class cocaine_processed {
         variable = "cocaineProcessed";
         displayName = "STR_Item_CocaineP";
-        weight = 4;
+        weight = 3;
         buyPrice = -1;
-        sellPrice = 155;
+        sellPrice = 410;
         illegal = true;
         edible = -1;
         icon = "media\Drugs1.paa";
@@ -907,7 +907,7 @@ class VirtualItems {
         variable = "zipties";
         displayName = "STR_Item_ZipTies";
         weight = 0;
-        buyPrice = 1200;
+        buyPrice = 200;
         sellPrice = 580;
         illegal = true;
         edible = -1;
@@ -923,7 +923,7 @@ class VirtualItems {
         illegal = true;
         edible = 0;
 		classname  = "acd_CampingTable_F";
-        icon = "media\ico_muttonLeg.paa";
+        icon = "media\building.paa";
     };
 	
 	class plasticChair {
@@ -935,7 +935,7 @@ class VirtualItems {
         illegal = true;
         edible = 0;
 		classname  = "xcam_ChairPlastic_F";
-        icon = "media\ico_muttonLeg.paa";
+        icon = "media\building.paa";
     };
 	
 	class bigTent {
@@ -947,7 +947,7 @@ class VirtualItems {
         illegal = true;
         edible = 0;
 		classname  = "CampEastC";
-        icon = "media\ico_muttonLeg.paa";
+        icon = "media\building.paa";
     };
 	
 	class smallTent {
@@ -959,7 +959,7 @@ class VirtualItems {
         illegal = true;
         edible = 0;
 		classname  = "Land_A_tent";
-        icon = "media\ico_muttonLeg.paa";
+        icon = "media\building.paa";
     };
 	
 	class sandBag {
@@ -971,7 +971,7 @@ class VirtualItems {
         illegal = true;
         edible = 0;
 		classname  = "Land_BagFence_Long_F";
-        icon = "media\ico_muttonLeg.paa";
+        icon = "media\building.paa";
     };
 	
 	class metalWall {
@@ -983,7 +983,7 @@ class VirtualItems {
         illegal = true;
         edible = 0;
 		classname  = "Land_wall_tin_4";
-        icon = "media\ico_muttonLeg.paa";
+        icon = "media\building.paa";
     };
 	
 	class goodWall {
@@ -995,7 +995,7 @@ class VirtualItems {
         illegal = true;
         edible = 0;
 		classname  = "zed2_civil";
-        icon = "media\ico_muttonLeg.paa";
+        icon = "media\building.paa";
     };
 	
 	class campFire {
@@ -1007,7 +1007,7 @@ class VirtualItems {
         illegal = true;
         edible = 0;
 		classname  = "Campfire_burning_F";
-        icon = "media\ico_muttonLeg.paa";
+        icon = "media\building.paa";
     };
 	
 	class portableLight {
@@ -1019,7 +1019,7 @@ class VirtualItems {
         illegal = true;
         edible = 0;
 		classname  = "acd_PortableLight_double_F";
-        icon = "media\ico_muttonLeg.paa";
+        icon = "media\building.paa";
     };
 	
 	class cargoNet {
@@ -1031,7 +1031,7 @@ class VirtualItems {
         illegal = true;
         edible = 0;
 		classname  = "acd_C_CargoNet_01_box_F";
-        icon = "media\ico_muttonLeg.paa";
+        icon = "media\building.paa";
     };
 	
 	class smallHut {
@@ -1043,7 +1043,7 @@ class VirtualItems {
         illegal = true;
         edible = 0;
 		classname  = "Land_Hut02";
-        icon = "media\ico_muttonLeg.paa";
+        icon = "media\building.paa";
     };
 	
 	class woodenCover {
@@ -1055,7 +1055,7 @@ class VirtualItems {
         illegal = true;
         edible = 0;
 		classname  = "Land_Hut03";
-        icon = "media\ico_muttonLeg.paa";
+        icon = "media\building.paa";
     };
 	
 		class fabricCover {
@@ -1067,7 +1067,7 @@ class VirtualItems {
         illegal = true;
         edible = 0;
 		classname  = "Land_covering_hut_big_EP1";
-        icon = "media\ico_muttonLeg.paa";
+        icon = "media\building.paa";
     };
 	
 	class barrelContainer {
@@ -1079,7 +1079,7 @@ class VirtualItems {
         illegal = true;
         edible = 0;
 		classname  = "Barrel4";
-        icon = "media\ico_muttonLeg.paa";
+        icon = "media\building.paa";
     };
 		class MilitaryCodeBreaker {
         variable = "MilitaryCodeBreaker";
@@ -1089,7 +1089,7 @@ class VirtualItems {
         sellPrice = 27500;
         illegal = true;
         edible = 0;
-        icon = "media\ico_muttonLeg.paa";
+        icon = "media\hacking.paa";
     };
 	
 };

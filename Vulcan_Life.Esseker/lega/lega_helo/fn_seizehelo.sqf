@@ -44,6 +44,7 @@ player playActionNow "stop";
 //_box setVehicleLock "UNLOCKED";
 deleteMarker "ranHeloArea";
 deleteMarker "ranHeloName";
+ [ranHeloName,ranHeloArea] remoteExec ["Lega_Fnc_GoFuckYourselfMarker",2];
 //["Successful","Congratulations, You have successfully broke into the Helicopter",[0, 245, 8, 0.94],""] call UPM_fnc_showNotification;
 hint "Congratulations, You have successfully broke into the Helicopter";
 sleep 10;

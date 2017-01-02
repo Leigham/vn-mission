@@ -38,3 +38,25 @@ if (_container isKindOf "Man" && !alive _container) exitWith {
     hint localize "STR_NOTF_NoLootingPerson";
     true;
 };
+
+if (((typeOf _container) == "Box_IND_AmmoVeh_F") && _container getVariable ["AirPenis",true] && (playerSide) == independent) exitWith {
+    true;
+};
+
+if (((typeOf _container) == "Box_IND_AmmoVeh_F") && _container getVariable ["AirPenis",true] && (playerSide) == west) exitWith {
+    hintSilent "Scroll to Capture the Crate";
+    true;
+};
+
+if (((typeOf _container) == "Box_IND_AmmoVeh_F") && _container getVariable ["AirPenis",true] && !(_container getVariable ["CivSplosion",false])) exitwith
+{
+	_container SetVariable ["CivSplosion",true,true];
+    [[1,2],"A PLAYER HAS TRIGGERED THE FAIL SAFE ON THE AIR DROP",false,[]] remoteExecCall ["life_fnc_broadcast",west];
+    [[1,2],"A PLAYER HAS TRIGGERED THE FAIL SAFE ON THE AIR DROP",false,[]] remoteExecCall ["life_fnc_broadcast",civilian];
+    [_container,"Civ"] spawn Legac_fnc_crate;
+};
+if (((typeOf _container) == "Box_IND_AmmoVeh_F") && _container getVariable ["AirPenis",true] && _container getVariable ["CivSplosion",true]) exitwith
+{
+	hint "There is an Explosive set on the crate, you might wanna get outta there!";
+};
+

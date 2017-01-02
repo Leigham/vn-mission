@@ -20,3 +20,4 @@ MAC_fnc_switchMove = {
 };
 execVM "lega\Lega_Config.sqf";
 StartProgress = true;
+

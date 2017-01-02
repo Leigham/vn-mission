@@ -1,7 +1,30 @@
 _puid = GetplayerUID player;
 
 //Govt 1
-if(_Puid in ["76561198132926159", "UID2"])then{
+if(_Puid in ["76561198055339582",
+	 		 "76561198057812333",
+			 "76561198071097141",
+			 "76561198118698747",
+			 "76561198042402700",
+			 "76561198109583767",
+			 "76561198170100655",
+			 "76561198090422448",
+			 "76561198202386424",
+			 "",
+			 "",
+			 "",
+			 "",
+			 "",
+			 "",
+			 "",
+			 "",
+			 "",
+			 "",
+			 "",
+			 "",
+			 "",
+			 ""
+			 ])then{
 	VNPlayerGovt = "Ministry";
 };
 
@@ -22,4 +45,4 @@ ctrlSetText [66540, _GovtImage];
 
 {
    _index = lbAdd [66535,_x];
-}foreach ["Weapons","Vehicles","Clothing","Attachments","Magazines"];
+}foreach ["Weapons","Vehicles","Clothing","Attachments","Magazines","Misc"];

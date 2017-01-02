@@ -24,6 +24,16 @@ class Lega_Client {
 		file ="lega\PlayerMenu\functions";
 		
     };
+    class vn_airdrop {
+        file ="lega\airdrops";
+        class captureReward {};
+        class crate{};
+    }
+    class PvPZoneFunctions {
+        file ="lega\pvpzone";
+        class PVPZone{};
+    };
+    
 	class Tank{
 		file ="lega\lega_tank";
 		class seizeTank{};
@@ -31,6 +41,7 @@ class Lega_Client {
     class Function{
         file ="lega\functions";
         class healShit{};
+        class DropG{};
     };
 	class Helo{
 		file ="lega\lega_helo";

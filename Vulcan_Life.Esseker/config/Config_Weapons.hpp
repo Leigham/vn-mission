@@ -22,12 +22,12 @@ class WeaponShops {
         license = "";
         level[] = { "", "", -1, "" };
         items[] = {
-            { "RH_m9", "", 6500, 500 },
-            { "ice123_seeker_bow", "", 6500, 500 },
-            { "RH_fn57", "", 8000, -1 },
-            { "RH_fnp45", "", 9500, -1 },
-            { "RH_g17", "", 11500, -1 },
-	        { "RH_usp", "", 13000, -1 },
+            { "RH_m9", "", 8500, 500 },
+            { "ice123_seeker_bow", "", 8500, 500 },
+            { "RH_fn57", "", 10000, -1 },
+            { "RH_fnp45", "", 12000, -1 },
+            { "RH_g17", "", 13000, -1 },
+	        { "RH_usp", "", 16000, -1 },
 	        { "RH_tec9", "", 17000, -1 }
         };
         mags[] = {
@@ -51,24 +51,21 @@ class WeaponShops {
         license = "";
         level[] = { "", "", -1, "" };
         items[] = {
-           { "RH_bull", "", 25000, 2500 },
-           { "RH_kimber_nw", "", 26000, 5000 },
-           { "RH_Deagles", "", 27000, -1 },
-           { "RH_muzi", "", 30000, 7500 },
-	       { "hlc_rifle_SLRchopmod", "", 34000, 7500 },
-	       { "UK3CB_BAF_L22A2", "", 38000, 7500 },
-	       { "UK3CB_BAF_L91A1", "", 41000, 7500 },
-	       { "hlc_rifle_ak74", "", 48000, 7500 },
-	       { "hlc_rifle_rpk", "", 51000, 7500 },
-	       { "hlc_rifle_honeybadger", "", 58000, 7500 },
-	       { "hlc_rifle_CQBR", "", 61000, 7500 },
-	       { "hlc_rifle_bcmjack", "", 67000, 7500 },
-	       { "hlc_rifle_FAL5000", "", 72000, 7500 },
-	       { "UK3CB_BAF_L115A3", "", 98000, 7500 },
-	       { "UK3CB_BAF_AT4_Launcher_Used", "", 99000, 7500 },
-	       { "HandGrenade", "", 32000, 7500 },
-	       { "DemoCharge_Remote_Mag", "", 48000, 7500 },
-	       { "APERSTripMine_Wire_Mag", "", 48000, 7500 },
+           { "RH_bull", "", 35000, 2500 },
+           { "RH_kimber_nw", "", 36000, 5000 },
+           { "RH_Deagles", "", 37000, -1 },
+           { "RH_muzi", "", 40000, 7500 },
+	       { "hlc_rifle_SLRchopmod", "", 54000, 7500 },
+	       { "UK3CB_BAF_L22A2", "", 58000, 7500 },
+	       { "UK3CB_BAF_L91A1", "", 61000, 7500 },
+	       { "hlc_rifle_ak74", "", 78000, 7500 },
+	       { "hlc_rifle_rpk", "", 81000, 7500 },
+	       { "hlc_rifle_honeybadger", "", 98000, 7500 },
+	       { "hlc_rifle_CQBR", "", 100000, 7500 },
+	       { "hlc_rifle_bcmjack", "", 127000, 7500 },
+	       { "hlc_rifle_FAL5000", "", 132000, 7500 },
+	       { "UK3CB_BAF_L115A3", "", 140000, 7500 },
+	       { "HandGrenade", "", 52000, 7500 },
            { "optic_ACO_grn", "", 3500 },
            { "optic_Holosight", "", 3500 },
            { "optic_Hamr", "", 3500 },
@@ -158,7 +155,6 @@ class WeaponShops {
             { "ItemMap", "", 250, 35 },
             { "ItemCompass", "", 250, 25 },
             { "ItemWatch", "", 250, -1 },
-            { "FirstAidKit", "", 750, 65 },
             { "NVGoggles", "", 10000, 980 },
             { "Chemlight_red", "", 1500, -1 },
             { "Chemlight_yellow", "", 1500, 50 },
@@ -179,9 +175,8 @@ class WeaponShops {
             { "ItemMap", "", 50, 35 },
             { "ItemCompass", "", 50, 25 },
             { "ItemWatch", "", 50, -1 },
-            { "FirstAidKit", "", 150, 65 },
             { "NVGoggles", "", 2000, 980 },
-            { "Chemlight_red", "", 300, -1 },
+            { "tf_anprc152", "", 1200, -1 },
             { "Chemlight_yellow", "", 300, 50 },
             { "Chemlight_green", "", 300, 50 },
             { "Chemlight_blue", "", 300, 50 }
@@ -208,8 +203,6 @@ class WeaponShops {
 			{ "tf_anprc152", "", 0, 0 },
             { "Binocular", "", 0, 0 },
             { "ItemGPS", "", 0, 0 },
-            { "FirstAidKit", "", 0, 0 },
-			{ "Medikit", "", 0, 0 },
             { "TRYK_Shemagh_G_NV", "TRYK Shemagh NV", 0, 0 }
         };
         mags[] = {
@@ -242,8 +235,6 @@ class WeaponShops {
 			{ "tf_anprc152", "", 0, 0 },
             { "Binocular", "", 0, 0 },
             { "ItemGPS", "", 0, 0 },
-            { "FirstAidKit", "", 0, 0 },
-			{ "Medikit", "", 0, 0 },
             { "TRYK_Shemagh_G_NV", "TRYK Shemagh NV", 0, 0 }
         };
         mags[] = {
@@ -310,8 +301,6 @@ class WeaponShops {
 			{ "tf_anprc152", "", 0, 0 },
             { "Binocular", "", 0, 0 },
             { "ItemGPS", "", 0, 0 },
-            { "FirstAidKit", "", 0, 0 },
-			{ "Medikit", "", 0, 0 },
             { "TRYK_Shemagh_G_NV", "TRYK Shemagh NV", 0, 0 }
         };
         mags[] = {
@@ -349,8 +338,6 @@ class WeaponShops {
 			{ "tf_anprc152", "", 0, 0 },
             { "Binocular", "", 0, 0 },
             { "ItemGPS", "", 0, 0 },
-            { "FirstAidKit", "", 0, 0 },
-			{ "Medikit", "", 0, 0 },
             { "TRYK_Shemagh_G_NV", "TRYK Shemagh NV", 0, 0 }
         };
          mags[] = {
@@ -381,8 +368,6 @@ class WeaponShops {
 			{ "tf_anprc152", "", 0, 0 },
             { "Binocular", "", 0, 0 },
             { "ItemGPS", "", 0, 0 },
-            { "FirstAidKit", "", 0, 0 },
-			{ "Medikit", "", 0, 0 },
             { "TRYK_Shemagh_G_NV", "TRYK Shemagh NV", 0, 0 }
         };
          mags[] = {
@@ -412,8 +397,6 @@ class WeaponShops {
 			{ "tf_anprc152", "", 0, 0 },
             { "Binocular", "", 0, 0 },
             { "ItemGPS", "", 0, 0 },
-            { "FirstAidKit", "", 0, 0 },
-			{ "Medikit", "", 0, 0 },
             { "TRYK_Shemagh_G_NV", "TRYK Shemagh NV", 0, 0 }
         };
          mags[] = {
@@ -452,8 +435,6 @@ class WeaponShops {
 			{ "tf_anprc152", "", 0, 0 },
             { "ItemGPS", "", 0, 45 },
             { "Binocular", "", 0, -1 },
-            { "FirstAidKit", "", 0, 0 },
-            { "Medikit", "", 0, 0 },
             { "TRYK_Shemagh_G_NV", "TRYK Shemagh NV", 0, 0 }
         };
         mags[] = {

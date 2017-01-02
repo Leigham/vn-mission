@@ -184,6 +184,29 @@ execVM 'lega\building\BuildConfig.sqf';
 [] execVM 'SurvivalLoop.sqf';
 
 DYNAMICMARKET_boughtItems = [];
+/*if (!(isServer)) then {
+		if (isNil "TFAR_fnc_isTeamSpeakPluginEnabled") exitWith {
+			999999 cutText ["Task Force Radio is not running on your computer. Please re-sync and retry","BLACK FADED"];
+			999999 cutFadeOut 99999999;
+
+			//_msg = "Please disconnect and install Task Force Radio!";
+			//[_msg,RPP_Red] call RPP_MessageSystem;
+
+			_msg = format ["%1 DOES NOT HAVE TASK FORCE RADIO INSTALLED!",name player];
+			[_msg] call DZL_Global_Message;
+		};
+
+		_TFenabled = [] call TFAR_fnc_isTeamSpeakPluginEnabled;
+
+		if (!(_TFenabled)) then {
+			while {!([] call TFAR_fnc_isTeamSpeakPluginEnabled)} do {
+				titleText ["Please enable Task Force Radio in your TS3 Plugins! || TS3 -> Settings -> Plugins", "BLACK"];
+				sleep 2;
+			};
+		};
+
+		_timeold = time;
+	};*/
 if(hasInterface) then{[] execVM "core\functions\Status Bar\init_statusBar.sqf"};
 [player] remoteExec ["TON_fnc_playerLogged",RSERV];
 diag_log "----------------------------------------------------------------------------------------------------";

@@ -44,8 +44,7 @@ while{true} do {
 player playActionNow "stop";
 [_box,0] remoteExecCall ["life_fnc_lockVehicle",_box];
 //_box setVehicleLock "UNLOCKED";
-deleteMarker "ranTankArea";
-deleteMarker "ranTankName";
+[ranTankName,ranTankArea] remoteExec ["Lega_Fnc_GoFuckYourselfMarker",2];
 
 sleep 10;
 

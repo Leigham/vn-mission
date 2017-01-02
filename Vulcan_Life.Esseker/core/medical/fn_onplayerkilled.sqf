@@ -11,8 +11,11 @@ params [
     ["_unit",objNull,[objNull]],
     ["_killer",objNull,[objNull]]
 ];
+
+fuckmeintheassyoucunt = _unit;
 disableSerialization;
 life_save_gear = [_unit] call life_fnc_fetchDeadGear;
+PVPZone = false;
 diag_log format ["Killer: %1 ---- Player:%2",_unit,_killer];
 _killername = Name _killer;
 _unitName = Name _unit;
@@ -69,15 +72,7 @@ _unit spawn {
     _Timer ctrlSetText localize "STR_Medic_Respawn_2";
 };
 
-_unit spawn {
-    private ["_requestBtn","_requestTime"];
-    disableSerialization;
-    _requestBtn = ((findDisplay 7300) displayCtrl 7303);
-    _requestBtn ctrlEnable false;
-    _requestTime = time + 5;
-    waitUntil {round(_requestTime - time) <= 0 || isNull _this};
-    _requestBtn ctrlEnable true;
-};
+
 
 [] spawn life_fnc_deathScreen;
 
@@ -87,6 +82,7 @@ _unit spawn {
     _unit = _this select 0;
     waitUntil {if (speed _unit isEqualTo 0) exitWith {true}; life_deathCamera camSetTarget _unit; life_deathCamera camSetRelPos [0,3.5,4.5]; life_deathCamera camCommit 0;};
 };
+
 
 //Make the killer wanted
 if (!isNull _killer && {!(_killer isEqualTo _unit)} && {!(side _killer isEqualTo west)} && {alive _killer}) then {
@@ -116,13 +112,33 @@ if (!isNull _killer && {!(_killer isEqualTo _unit)} && {!(side _killer isEqualTo
     };
 };
 
+_unit spawn {
+    private ["_requestBtn","_requestTime"];
+    disableSerialization;
+    _requestBtn = ((findDisplay 7300) displayCtrl 7303);
+    _requestBtn ctrlEnable false;
+    _requestTime = time + 5;
+    waitUntil {round(_requestTime - time) <= 0 || isNull _this};
+	if(fuckmeintheassyoucunt distance (getMarkerPos "PVP_Zone") <=75)then{
+	_requestBtn ctrlEnable false;
+	}else{
+    _requestBtn ctrlEnable true;
+	};
+	
+	};
 
-
-if (LIFE_SETTINGS(getNumber,"drop_weapons_onDeath") isEqualTo 0) then {
-    _unit removeWeapon (primaryWeapon _unit);
-    _unit removeWeapon (handgunWeapon _unit);
-    _unit removeWeapon (secondaryWeapon _unit);
+if ((fuckmeintheassyoucunt distance (getMarkerPos "PVP_Zone")) <= 75) then {
+    drop_weapons_onDeath = true;
+    PVPZone = true;
+    [fuckmeintheassyoucunt] spawn Legac_fnc_dropg;
+} else {
+     drop_weapons_onDeath = false;
+     PVPZone = false;
+    fuckmeintheassyoucunt removeWeapon (primaryWeapon _unit);
+    fuckmeintheassyoucunt removeWeapon (handgunWeapon _unit);
+    fuckmeintheassyoucunt removeWeapon (secondaryWeapon _unit);
 };
+
 
 
 //Killed by cop stuff...
@@ -138,7 +154,7 @@ if (side _killer isEqualTo civilian && {_killer != _unit}) then {
 	if (_killer in _BountyPeeps) then {
 		life_bountyHunter = _killer;
 	};
-};	
+};
 
 if (!isNull _killer) then {
     life_removeBounty = true;

@@ -34,9 +34,11 @@ _customBuildables = [
 "Barrel4",
 "acd_C_CargoNet_01_box_F"
 ];
+if(_container in _customBuildables)then{
 diag_log format ["%1",_container];
 if (_container getVariable  ["Lega_BuildingSystemItem",true]) then{
 diag_log "UPDATING CONTAINER";
 [_container] remoteExecCall ["Lega_fnc_UpdateCustomBuildables",RSERV];
+};
 };
 [] call SOCK_fnc_updateRequest;

@@ -13,7 +13,7 @@
 // ███████████████████████████████████████████████████████████████████████
 
 DYNMARKET_Serveruptime         = 05;   // Serveruptime after restart in hours
-DYNMARKET_UseExternalDatabase  = true; // Should the script use the External Database?
+DYNMARKET_UseExternalDatabase  = false; // Should the script use the External Database?
 DYNMARKET_PriceUpdateInterval  = 01;   // After how many minutes should the price be updated?
 DYNMARKET_CreateBackups        = true; // Should the server save write the prices regulary into the Database? If false, it will save the prices before Server-restart?
 DYNMARKET_CreateBackupInterval = 03;   // After how many updates (PriceUpdateIntervals) should the prices be saved into the Database?
@@ -21,7 +21,7 @@ DYNMARKET_UserNotification     = false; // Should the user be informed with a hi
 
 // █████████████████ USER NOTIFICATION TEXTS  █████████████████
 
-DYNMARKET_UserNotification_Text = 
+DYNMARKET_UserNotification_Text =
 [
 	"Your prices have been updated!",
 	"The new prices are being calculated by the server..."
@@ -38,7 +38,7 @@ DYNMARKET_Items_Groups =
 		],
 		0.5
 	],
-	["Illegal", 
+	["Illegal",
 		[
 			/*["peach",-1,30,100]*/
 		],
@@ -48,9 +48,9 @@ DYNMARKET_Items_Groups =
 
 // █████████████████    ALL SELLABLE ITEMS    █████████████████
 
-DYNMARKET_Items_ToTrack        = 
+DYNMARKET_Items_ToTrack        =
 [
-
+	["goldbar",10000],
 	["pickaxe",350],
 	["defibrillator",450],
 	["toolkit",100],
@@ -114,7 +114,7 @@ DYNMARKET_Items_ToTrack        =
 	["fabricCover",135],
 	["barrelContainer",135],
 	["MilitaryCodeBreaker",27500]
-	
+
 ];
 
 //███████████████████████████████████████████████████████████████████████

@@ -905,56 +905,56 @@ class LifeCfgVehicles {
     };
 
     class shounka_nemo_grise {
-        vItemSpace = 1000;
+        vItemSpace = 700;
         licenses[] = { {""}, {""}, {""}, {""} };
         price = 49000;
         textures[] = { };
     };
 
     class shounka_nemo_noir {
-        vItemSpace = 1000;
+        vItemSpace = 700;
         licenses[] = { {""}, {""}, {""}, {""} };
         price = 49000;
         textures[] = { };
     };
 
     class shounka_nemo_orange {
-        vItemSpace = 1000;
+        vItemSpace = 700;
         licenses[] = { {""}, {""}, {""}, {""} };
         price = 49000;
         textures[] = { };
     };
 
     class Jonzie_Transit {
-        vItemSpace = 1300;
+        vItemSpace = 850;
         licenses[] = { {""}, {""}, {""}, {""} };
         price = 59000;
         textures[] = { };
     };
 
     class shounka_a3_spr_civ_grise {
-        vItemSpace = 1600;
+        vItemSpace = 900;
         licenses[] = { {""}, {""}, {""}, {""} };
         price = 68000;
         textures[] = { };
     };
 
     class Jonzie_Tanker_Truck {
-        vItemSpace = 2000;
+        vItemSpace = 950;
         licenses[] = { {""}, {""}, {""}, {""} };
         price = 78000;
         textures[] = { };
     };
 
     class Jonzie_Box_Truck {
-        vItemSpace = 2500;
+        vItemSpace = 980;
         licenses[] = { {""}, {""}, {""}, {""} };
         price = 88000;
         textures[] = { };
     };
 
     class shounka_ivceco_bleufonce {
-        vItemSpace = 4000;
+        vItemSpace = 1000;
         licenses[] = { {""}, {""}, {""}, {""} };
         price = 120000;
         textures[] = { };

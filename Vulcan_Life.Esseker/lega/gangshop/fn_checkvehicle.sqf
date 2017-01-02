@@ -3,19 +3,19 @@ params ["_Classname","_Price"];
 private _bountyDifference = _price - life_cash;
 
 if (life_cash < _price) exitwith{hint format ["You dont have enough cash to make that purchase, you need %1 more !",_bountyDifference]};
-life_cash = Life_cash - _price;
+life_cash = Life_cash - fuckyouprice;
 [0] call SOCK_fnc_updatePartial;
-if(!VNPlayerGang == "")then{
-private _thisMarker = getText (missionConfigFile >> "Gangs" >> VNPlayerGang >> "Marker");
+if(!(VNPlayerGang == ""))then{
+fuckthisMarker = getText (missionConfigFile >> "Gangs" >> VNPlayerGang >> "Marker");
 };
-if(!MinistryVar == "")then{
-private _thisMarker = getText (missionConfigFile >> "Ministry" >> MinistryVar >> "Marker");
+if(!(VNPlayerGovt == ""))then{
+fuckthisMarker = getText (missionConfigFile >> "GovernmentConfig" >> VNPlayerGovt >> "Marker");
 };
-systemChat format ["%1",_thisMarker];
-private _pos = getMarkerPos _thisMarker;
+systemChat format ["%1",fuckthisMarker];
+private _pos = getMarkerPos fuckthisMarker;
 systemChat format ["%1",_pos];
 if(player distance _pos > 100)exitwith{hint "You can only purchase your gang vehicles at your own base"};
-_vehicle = createVehicle [_className, _pos, [], 0, "NONE"];
+_vehicle = createVehicle [_classname, _pos, [], 0, "NONE"];
 waitUntil {!isNil "_vehicle" && {!isNull _vehicle}}; //Wait?
 _vehicle allowDamage false; //Temp disable damage handling..
 _vehicle setPos _pos;

@@ -93,19 +93,22 @@ class CfgRemoteExec {
 		F(Lega_fnc_ranHeloInit,SERVER)
 		
 		F(life_fnc_bountyHunterReceive,CLIENT)//Bountyhunter
-F(life_fnc_bountyList,CLIENT)//Bountyhunter
-F(life_fnc_markers,CLIENT)//Bountyhunter
+		F(life_fnc_bountyList,CLIENT)//Bountyhunter
+		F(life_fnc_markers,CLIENT)//Bountyhunter
+		
+		F(Lega_fnc_explodebox, SERVER)
+		F(Legac_fnc_captureReward, ANYONE)
 
 
-F(life_fnc_bountyAdd,SERVER)//Bountyhunter
-F(life_fnc_amountBounty,SERVER)//Bountyhunter
-F(life_fnc_bountyFetch,SERVER)//Bountyhunter
-F(life_fnc_bountyPerson,SERVER)//Bountyhunter
-F(life_fnc_bountyProfUpdate,SERVER)//Bountyhunter
-F(life_fnc_bountyRemove,SERVER)//Bountyhunter
-F(life_fnc_bountyAlter,SERVER)//Bountyhunter
-F(life_fnc_bountyCrimes,SERVER)//Bountyhunter
-F(life_fnc_bountyAmountGather,SERVER)//Bountyhunter
+		F(life_fnc_bountyAdd,SERVER)//Bountyhunter
+		F(life_fnc_amountBounty,SERVER)//Bountyhunter
+		F(life_fnc_bountyFetch,SERVER)//Bountyhunter
+		F(life_fnc_bountyPerson,SERVER)//Bountyhunter
+		F(life_fnc_bountyProfUpdate,SERVER)//Bountyhunter
+		F(life_fnc_bountyRemove,SERVER)//Bountyhunter
+		F(life_fnc_bountyAlter,SERVER)//Bountyhunter
+		F(life_fnc_bountyCrimes,SERVER)//Bountyhunter
+		F(life_fnc_bountyAmountGather,SERVER)//Bountyhunter
 
 		/* Interaction Menu*/
         /* Server only functions */
